@@ -1,0 +1,12 @@
+sendgrid.env
+.env
+node_modules/
+dist/
+coverage/
+.DS_Store
+.vscode/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+.pnp.js 

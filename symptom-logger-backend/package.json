@@ -1,0 +1,26 @@
+{
+  "name": "symptom-logger-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "start:dev": "nodemon src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.6",
+    "@slack/web-api": "^7.13.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "knex": "^3.1.0",
+    "pdfkit": "^0.17.2",
+    "pg": "^8.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
