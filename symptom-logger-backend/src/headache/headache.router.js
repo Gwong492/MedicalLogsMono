@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const controller = require("./files.controller");
+const controller = require("./headache.controller");
 const methodNotAllowed = require("../errors/methodNotAllowed");
 const cors = require("cors");
 

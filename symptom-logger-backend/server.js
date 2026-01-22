@@ -1,5 +1,8 @@
 const { PORT = 5555 } = process.env;
 const app = require("./app");
 
-const listener = () => console.log(`Listening on Port ${PORT}!`);
-app.listen(PORT, listener);
+const HOST = "0.0.0.0";
+
+app.listen(PORT, HOST, () => {
+  console.log(`Listening on http://${HOST}:${PORT}`);
+});
