@@ -9,7 +9,7 @@ const getSymptomData = (req, res) => {
 const sendPDFReport = async (req, res) => {
   console.log("Data", req.body.profile.fullName);
   const pdfBuffer = await buildSymptomReportPdf(req.body.data.logData, { title: req.body.metadata.exportType });
-  await uploadFileToSlack(pdfBuffer, "headache_report.pdf", process.env.SLACK_CHANNEL_ID);
+  await uploadFileToSlack(pdfBuffer, "headache_report.pdf", req.body.profile.fullName, process.env.SLACK_CHANNEL_ID);
   res.status(200).json({ message: "PDF report sent." });
 }
 
