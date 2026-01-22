@@ -13,7 +13,7 @@ const slack = new WebClient(process.env.API_TEST_KEY);
 
 const channelId = process.env.SLACK_CHANNEL_ID;
 
-export async function uploadFileToSlack(buffer, filename, title, channel = channelId) {
+export async function uploadFileToSlack(buffer, filename, channel = channelId) {
     await slack.files.uploadV2({
     channel_id: channel,
     filename: filename,
