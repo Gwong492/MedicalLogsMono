@@ -19,6 +19,6 @@ export async function uploadFileToSlack(buffer, filename, name, channel = channe
     filename: filename,
     file: buffer,
     title: name,
-    initial_comment: "Testing file upload from Node script.",
+    initial_comment: "Your log report is ready!🎉🎉",
     });
 }
