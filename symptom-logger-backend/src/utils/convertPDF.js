@@ -74,7 +74,7 @@ import PDFDocument from "pdfkit";
  */
 export function buildSymptomReportPdf(logs, options = {}) {
   return new Promise((resolve, reject) => {
-    const doc = new PDFDocument({ margin: 40, size: "LETTER" });
+    const doc = new PDFDocument({ margin: 30, size: "LETTER", layout: "landscape" });
     const chunks = [];
 
     doc.on("data", (c) => chunks.push(c));
