@@ -205,9 +205,9 @@ export function pdfBufferToBase64(pdfBuffer) {
 function inferReportType(title) {
   const t = String(title || "").toLowerCase();
 
-  if (t.includes("headache") || t.includes("migraine")) return "headache";
-  if (t.includes("blood pressure") || t.includes("bloodpressure") || t.includes("bp")) return "bloodPressure";
-  if (t.includes("pain")) return "pain";
+  if (t.includes("headache") || t.includes("migraine")) return "Headache Log";
+  if (t.includes("blood pressure") || t.includes("bloodpressure") || t.includes("bp")) return "Blood Pressure Log";
+  if (t.includes("pain")) return "Pain Log";
 
   return "headache";
 }
